@@ -40,7 +40,7 @@ network 201.187.236.8 mask 255.255.255.252
 network 187.201.167.12 mask 255.255.255.252
 interface g0/0
 ip address 201.187.236.10 255.255.255.252
-no shudown
+no shutdown
 description CONEXAO COM RT1
 exit
 interface g0/1
