@@ -36,8 +36,8 @@ login local
 exit
 router bgp 65000
 neighbor 187.201.167.14 remote-as 65001 
-network 201.187.236.8 255.255.255.252
-network 187.201.167.12 255.255.255.252
+network 201.187.236.8 mask 255.255.255.252
+network 187.201.167.12 mask 255.255.255.252
 interface g0/0
 ip address 201.187.236.10 255.255.255.252
 no shudown
