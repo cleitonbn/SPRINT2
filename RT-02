@@ -34,14 +34,10 @@ transport input ssh
 exec-timeout 5
 login local
 exit
-
 router bgp 65000
 neighbor 187.201.167.14 remote-as 65001 
 network 201.187.236.8 255.255.255.252
 network 187.201.167.12 255.255.255.252
-redistribute ospf 1 metric 1
-redistribute rip subnets
-
 interface g0/0
 ip address 201.187.236.10 255.255.255.252
 no shudown
@@ -51,4 +47,10 @@ interface g0/1
 ip address 187.201.167.13 255.255.255.252
 no shutdown
 description CONEXAO COM RT3
+exit
+interface range g0/0-1
+cdp enable
+exit
+interface g0/2
+no cdp enable
 exit
