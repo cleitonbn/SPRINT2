@@ -22,7 +22,7 @@ S:::::::::::::::SS E::::::::::::::::::::EN::::::N        N::::::N A:::::A       
 "
 enable secret cisco
 service password-encryption
-ip domain-name grupoA.local
+ip domain-name grupoART2.local
 crypto key generate rsa general-keys modulus 1024
 username cisco privilege 15 secret cisco
 line console 0
