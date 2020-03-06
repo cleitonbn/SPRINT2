@@ -38,6 +38,9 @@ router bgp 65000
 neighbor 187.201.167.14 remote-as 65001 
 network 201.187.236.8 mask 255.255.255.252
 network 187.201.167.12 mask 255.255.255.252
+router ospf 1
+network 201.187.236.8 0.0.0.3 area 0
+network 187.201.167.12 0.0.0.3 area 0
 interface g0/0
 ip address 201.187.236.10 255.255.255.252
 no shutdown
